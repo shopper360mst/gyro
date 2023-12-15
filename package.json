@@ -1,0 +1,25 @@
+{
+  "name": "@shopper360mst/gyro_helper",
+  "version": "1.0.0",
+  "description": "to acceleromoter and gyrometer readings",
+  "main": "gyro_helper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shopper360mst/gyro.git"
+  },
+  "keywords": [
+    "gyromter",
+    "accelerometer",
+    "html5",
+    "js"
+  ],
+  "author": "shopper360",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shopper360mst/gyro/issues"
+  },
+  "homepage": "https://github.com/shopper360mst/gyro#readme"
+}
