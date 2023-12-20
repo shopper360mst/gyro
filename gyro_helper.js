@@ -8,8 +8,7 @@
  *  new Gyro_Helper();
  */
 export default class Gyro_Helper {
-    constructor() {
-      this.init();
+    constructor() {      
     }
     init() {
       var self = this;
@@ -17,14 +16,14 @@ export default class Gyro_Helper {
           // Handle iOS 13+ devices.
           DeviceMotionEvent.requestPermission().then((state) => {
             if (state === 'granted') {
-              window.addEventListener('devicemotion', self.handleOrientation);
+              window.addEventListener('deviceorientation', self.handleOrientation);
             } else {
               console.error('Request to access the orientation was rejected');
             }
           }).catch(console.error);
       } else {
           // Handle regular non iOS 13+ devices.
-          window.addEventListener('devicemotion', self.handleOrientation);
+          window.addEventListener('deviceorientation', self.handleOrientation);
       }
     }
     handleOrientation(evt) {
